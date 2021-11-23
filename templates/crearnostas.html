@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% block titulo%} Crear Notas {% endblock %}
+</head>
+<body>
+  {% block contenido %}
+    <form action="/crearnota" method="post">
+      <label class="especial2"> Crear Nota </label>
+      <br>
+      <br>
+     <label for="Titulo">Titulo de la Nota</label>
+     <br>
+     <input type="text" id="campotitulo" name="campotitulo" value="" class="field">
+     <br>
+     <label for="Cuerpo">Cuerpo de la Nota</label>
+     <br>
+     <input type="text" id="campocuerpo" name="campocuerpo" value="" class="field">
+     <br>
+     <input class="btnCrear" type="submit" value=" Crear Nota ">
+     <br>
+   </form>
+   {% endblock %} 
+
+</body>
+</html>

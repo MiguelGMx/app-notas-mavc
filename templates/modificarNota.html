@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% block titulo%} Modificar Notas {% endblock %}
+</head>
+<body>
+  {% block contenido %}
+    <form action="/modificarNota" method="post">
+      <label class="especial2"> Modificar Nota </label>
+      <br>
+      <br>
+     <label for="Titulo">Titulo de la Nota</label>
+     <br>
+     <input type="text" id="campotitulo" name="campotitulo" value="{{nota.tituloNota}}" class="field">
+     <br>
+     <label for="Cuerpo">Cuerpo de la Nota</label>
+     <br>
+     <input type="text" id="campocuerpo" name="campocuerpo" value="{{nota.cuerpoNota}}" class="field">
+     <input type="hidden" name="idnota" value="{{nota.idNota}}">
+     <br>
+     <input type="submit" value="Modificar Nota" class="btnCrear">
+     <br> 
+    </form>
+   {% endblock %} 
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %} {% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/estilo.css"/>
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+    {% block encabezado%}
+    <div class="contenedor">
+        <img class="img1" src="/static/images/Notas.png" alt="logocol" width="100" height="100">
+        <h1 class="title">Aplicacion de creacion de Notas</h1>
+        <h1 class="title">Trabajamos para pasar la materia</h1>
+    </div>
+
+    <div class="divHeader">
+        <ul class="navBar">
+            <li class="navBarButton"><a href="/">Inicio</a></li>
+            <li class="navBarButton"><a href="/crean">Crear Nota</a></li>
+            <li class="navBarButton"><a href="/about">Ver Notas</a></li>
+            <li class="navBarButton"><a href="/">Geme</a></li>
+        </ul>
+    </div>
+    {% endblock %}
+
+    {% block contenido%}
+    {% endblock %}
+
+    {% block pie%}
+    <div class="bloquecreditos">
+        <p class="creditos">Tecnologico Nacional de Mexico Campus Colima</p>
+        <p class="creditos">Estudiante</p>
+        <p class="creditos">Miguel Angel Vejar Cortes 18460042</p>
+        <p class="creditos">Asignatura</p>
+        <p class="creditos">Servicios en la Nube</p>
+        <p class="creditos" >Maestra</p>
+        <p class="creditos" ">Patricia Elizabeth Figueroa Millan</p>
+    </div>
+    
+    {% endblock %}
+
+</body>
+{% endblock %}
+</html>

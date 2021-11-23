@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: darkgray;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color:darkgreen;
+}
+.especial{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    color:teal;
+    padding-left: 25px;
+}
+.especial2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    color:teal;
+    text-align: center;
+    padding-left: 25px;
+}
+.especial3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    color:darkgreen;
+    text-align: center;
+    padding-left: 25px;
+}
+.lista{
+    color: gold;
+}
+.creditos{
+    font-size: .5em;
+    text-align: center;
+}
+.bloquecreditos{
+    margin: auto;
+    padding: 20px 20px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: rgb(10, 37, 158);
+}
+.contenedor{
+    width: 100%;
+    /*max-width: 1000px;*/
+    margin: auto;
+    padding: 5px;
+    background: white;
+    /*margin-top: 100px;*/
+    border-top: 6px solid teal;
+}
+
+.title{
+    font-size: 40px;
+    color: teal;
+    text-align: center;
+}
+
+.title2{
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.img1{
+    float: left;
+    padding-left: 20px;
+}
+
+
+/* ------------------------------- barra de navegación ----------------------- */
+.navBar {
+    background-color: teal;
+    overflow: hidden;
+}
+
+.navBarButton {
+    margin: 0;
+    padding: 0.5em 1em;
+    float: left;
+
+    color: rgb(91, 211, 211);
+}
+
+.navBarButton a{
+    color: rgb(255, 255, 255);
+}
+
+.navBarButton:hover {
+    color: rgb(99, 99, 194);
+    background-color:rgb(68, 134, 134);
+}
+.navBarButton:last-child {
+    margin: 0;
+    float: right;
+}
+
+/*------------------------ Tabla de Contenidos ------------------------*/
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 20px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0 , 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* -------------------------------------- Formulario de Creacion de Notas ----------------------------------- */
+.btnCrear{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px 15px;
+    margin: 10px 1px;
+    text-decoration: 0 1px 0 rgba(255 , 255, 255, 0.5);
+    box-shadow: 0 1px 1px rgba(0 , 0, 0, 0.5);
+    color: white;
+    background-color: #247e25e8;
+}
+
+.btnCrear:hover{
+    background-color: #457c46;
+}
+
+.btnCrear:active{
+    background-color: #29962A;
+}
+
+form{
+    width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 10px;
+    color: #999;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input{
+    outline: none;
+    border: 0;
+    width: 280px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 8px;
+}
+
+.field:focus{
+    border-color: teal;
+}
+
+/* ----------------------------------- Menu Principal Contenedor --------------------------- */
+.menu-card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-card  {
+    margin: 0 20px;
+    padding: 1rem;
+    background-color: teal;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.menu-card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+}
+
+.menu-card div {
+    color: white;
+    text-decoration: none;
+}

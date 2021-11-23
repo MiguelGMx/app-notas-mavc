@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% block titulo%} Menu Principal {% endblock %}
+</head>
+<body>
+  {% block contenido %}
+  <br>
+  <br>
+  <p class="especial3">Este es el Menu principal</p>
+  <br>
+  <div class="menu-card-container">
+    <a href="/crean" class="menu-card">
+      <img src="/static/images/crearnota.png" alt="Crear nota">
+      <div>Crear nota</div>
+    </a>
+    <a href="/about" class="menu-card">
+      <img src="/static/images/vernota.jpg" alt="Ver notas">
+      <div>Ver notas</div>
+    </a>
+  </div>
+  {% endblock %} 
+</body>
+</html>

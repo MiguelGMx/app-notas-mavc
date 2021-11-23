@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block titulo%} Notas Almacenadas {% endblock %}
+
+{% block contenido %}
+<h2 class="title2"> Notas Almacenadas </h1>
+<p class="especial"> Tabla de datos sobre las notas alamcenadas. </p>
+<br>
+
+   <table class="content-table">
+       <thead>
+           <tr>
+               <th>Titulo</th>
+               <th>Cuerpo</th>
+               <th>Eliminar</th>
+               <th>Modificar</th>
+           </tr>
+       </thead>
+       <tbody>
+            {% for nota in consulta %}
+            <tr>
+                <td>{{nota.tituloNota}}</td>
+                <td>{{nota.cuerpoNota}}</td>
+                <td><a href="/eliminarnota/{{nota.idNota}}">X</a></td>
+                <td><a href="/editarnota/{{nota.idNota}}">+</a></td>
+            </tr>
+            {% endfor %}
+       </tbody>
+    </table>
+
+{% endblock %}
+
